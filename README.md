@@ -76,7 +76,7 @@ To https://github.com/bigman73/minimal-ts
 v1.0.3
 ```
 
-Then publish to to npm with:
+Then publish the new version of the package to `npm` with:
 
 ```shell
 npm publish
