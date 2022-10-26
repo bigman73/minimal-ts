@@ -1,7 +1,7 @@
 # a-minimal-ts
 
 A demo package with minimal Typescript functionality.
-This package can be used a skeleton or template for quickly building new TypeScript packages without wasting time on setup of boilerplate configurations and support tools.
+This package can be used as a skeleton or template for quickly building new TypeScript packages, without wasting time on setup of boilerplate configurations and supporting tools.
 
 Provides the following functionality:
 
