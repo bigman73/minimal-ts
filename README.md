@@ -12,25 +12,43 @@ Provides the following functionality:
 5. prettier formatting
 6. jest unit tests
 
+# Getting started
+
+Run the command:
+
+```shell
+npm install
+```
+
+# Tests
+
+## Running `jest` unit tests
+
+Run the command:
+
+```shell
+npm test
+```
+
 # Release
 
 ## How to publish a new version to NPM
 
 Increment the version by running the command: (select one of the three options)
 
-```
+```shell
 npm version patch
 ```
 
 or
 
-```
+```shell
 npm version minor
 ```
 
 or
 
-```
+```shell
 npm version major
 ```
 
@@ -38,7 +56,7 @@ If the version was incremented successfully then the code with new tags would be
 
 A similar expected output on terminal would be:
 
-```
+```console
 Enumerating objects: 32, done.
 Counting objects: 100% (32/32), done.
 Delta compression using up to 8 threads
@@ -59,13 +77,13 @@ v1.0.3
 
 Then publish to to npm with:
 
-```
+```shell
 npm publish
 ```
 
 A similar expected output on terminal would be:
 
-```
+```console
 npm notice
 npm notice 📦  a-minimal-ts@1.0.3
 npm notice === Tarball Contents ===
