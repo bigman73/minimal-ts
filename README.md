@@ -8,8 +8,10 @@ Provides the following functionality:
 1. Module style (import/export)
 2. API
    - `multiply` - multiplies two numbers
+   - `wrapInArray` - generic function
 3. Typescript
-4. eslint coding style rule validation
+4. eslint coding style validation
+   - jsdoc and tsdoc rules enforcement
 5. prettier formatting
 6. jest unit tests
 
