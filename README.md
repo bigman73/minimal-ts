@@ -14,6 +14,8 @@ Provides the following functionality:
    - jsdoc and tsdoc rules enforcement
 5. prettier formatting
 6. jest unit tests
+7. `husky` hooks - ensure that git commits are of high quality
+8. `commitlint` - ensure that commit subjects comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
 
 # Getting started
 
