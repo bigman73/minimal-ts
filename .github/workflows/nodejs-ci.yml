@@ -34,7 +34,16 @@ jobs:
       - name: Install pnpm dependencies
         run: pnpm install
 
-      - run: pnpm build
-      - run: pnpm test
+      - name: Check code formatting (prettier)
+        run: pnpm prettier
+
+      - name: Check code quality with linter
+        run: pnpm lint
+
+      - name: Build the Typescript package
+        run: pnpm build
+
+      - name: Unit Test the package
+        run: pnpm test
         env:
           CI: true
