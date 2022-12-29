@@ -21,9 +21,13 @@ Provides the following functionality:
 
 # Prerequisites
 
+## NodeJS
+
+Install [NodeJS](https://nodejs.org/en/download/) 16 or above.
+
 ## PNPM installation
 
-Install the `pnpm` package manager
+Install the `pnpm` NodeJS package manager
 
 ```
 npm install pnpm -g
