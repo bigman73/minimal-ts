@@ -16,13 +16,25 @@ Provides the following functionality:
 6. jest unit tests
 7. `husky` git [hooks](https://git-scm.com/docs/githooks) - ensure that git commits are of high quality
 8. `commitlint` - ensure that commit subjects comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
+9. `pnpm` package manager
+10. NodeJS Continuos Integration Github workflow
+
+# Prerequisites
+
+## PNPM installation
+
+Install the `pnpm` package manager
+
+```
+npm install pnpm -g
+```
 
 # Getting started
 
 Run the command:
 
 ```shell
-npm install
+pnpm install
 ```
 
 # Tests
@@ -32,7 +44,7 @@ npm install
 Run the command:
 
 ```shell
-npm test
+pnpm test
 ```
 
 # Release
