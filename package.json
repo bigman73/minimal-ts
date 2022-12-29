@@ -5,15 +5,15 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "npx tsc",
-    "lint": "npx eslint \"src/**/*.{ts,tsx}\"",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run lint && npm test",
-    "preversion": "npm run lint",
+    "build": "pnpm exec tsc",
+    "lint": "pnpm exec eslint \"src/**/*.{ts,tsx}\"",
+    "prepare": "pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm test",
+    "preversion": "pnpm lint",
     "postversion": "git push && git push --tags",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest --config jestconfig.json",
-    "upg": "npx npm-check-updates --interactive"
+    "upg": "pnpm exec npm-check-updates --interactive"
   },
   "type": "module",
   "files": [
