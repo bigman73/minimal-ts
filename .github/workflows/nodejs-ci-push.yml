@@ -43,7 +43,7 @@ jobs:
         env:
           CI: true
 
-   bump-version:
+  bump-version:
     name: 'Bump Version on main'
     runs-on: ubuntu-latest
     needs: build
