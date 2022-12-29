@@ -6,13 +6,13 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "pnpm exec tsc",
-    "lint": "pnpm exec eslint \"src/**/*.{ts,tsx}\"",
     "prepare": "pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test",
-    "preversion": "pnpm lint",
-    "postversion": "git push && git push --tags",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "test": "jest --config jestconfig.json",
+    "lint": "pnpm exec eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "pnpm exec eslint --fix **/*.ts && pnpm prettier:fix",
+    "prettier": "pnpm exec prettier --check .",
+    "prettier:fix": "pnpm exec prettier --write .",
+    "test": "pnpm exec jest --config jestconfig.json",
     "upg": "pnpm exec npm-check-updates --interactive"
   },
   "type": "module",
