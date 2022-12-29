@@ -18,6 +18,9 @@ Provides the following functionality:
 8. `commitlint` - ensure that commit subjects comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
 9. `pnpm` package manager
 10. NodeJS Continuos Integration Github workflow
+    - Prettier and lint
+    - Unit Tests
+    - Auto Version bump
 
 # Prerequisites
 
