@@ -65,4 +65,4 @@ jobs:
         with:
           skip-tag: 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
