@@ -10,14 +10,15 @@ Provides the following functionality:
    - `multiply` - multiplies two numbers
    - `wrapInArray` - generic function
 3. Typescript
-4. eslint coding style validation
-   - jsdoc and tsdoc rules enforcement
-5. prettier formatting
-6. jest unit tests
+4. Code Quality
+   - Check code formatting with `prettier`
+   - `eslint` coding style validation
+     - `jsdoc` and `tsdoc` rules enforcement
+6. `jest` unit tests
 7. `husky` git [hooks](https://git-scm.com/docs/githooks) - ensure that git commits are of high quality
 8. `commitlint` - ensure that commit subjects comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
 9. `pnpm` package manager
-10. NodeJS Continuos Integration Github workflow
+10. NodeJS Continuos Integration Github workflows
     - Prettier and lint
     - Unit Tests
     - Auto Version bump
