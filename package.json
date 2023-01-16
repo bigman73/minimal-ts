@@ -1,7 +1,7 @@
 {
   "name": "a-minimal-ts",
   "description": "A test Typescript libary that has minimal functionality",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
