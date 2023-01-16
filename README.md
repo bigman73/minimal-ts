@@ -27,17 +27,39 @@ Provides the following functionality:
 
 ## NodeJS
 
-Install [NodeJS](https://nodejs.org/en/download/) 16 or above.
+Install [NodeJS](https://nodejs.org/en/download/) 16 or above, either directly or with `nvm`
+
+# Getting started
+
+## Usage
+### npm
+```shell
+npm i a-minimal-ts
+```
+
+### yarn
+```shell
+yarn add a-minimal-ts
+```
+
+
+### pnpm
+```shell
+pnpm add a-minimal-ts
+```
+
+# Local development
+
 
 ## PNPM installation
 
 Install the `pnpm` NodeJS package manager
 
-```
+```shell
 npm install pnpm -g
 ```
 
-# Getting started
+## Install
 
 Run the command:
 
@@ -56,6 +78,5 @@ pnpm test
 ```
 
 # Versioning and Release
-TODO
 
 Done by github workflow actions
