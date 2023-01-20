@@ -4,8 +4,8 @@ module.exports = {
     es2021: true,
     node: true
   },
-  plugins: ['@typescript-eslint', 'jsdoc', 'eslint-plugin-tsdoc'],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+  plugins: ['@typescript-eslint', 'jsdoc', 'eslint-plugin-tsdoc', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   overrides: [],
   parserOptions: {
@@ -88,6 +88,8 @@ module.exports = {
     'jsdoc/require-yields-check': 1, // Recommended
     'jsdoc/tag-lines': 1, // Recommended
     'jsdoc/valid-types': 1, // Recommended
-    'tsdoc/syntax': 'warn'
+    'tsdoc/syntax': 'warn',
+    // Prettier plugin rules
+    'prettier/prettier': 'error'
   }
 }
