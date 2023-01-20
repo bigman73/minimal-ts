@@ -11,15 +11,17 @@ Provides the following functionality:
    - `wrapInArray` - generic function
 3. Typescript
 4. Code Quality
-   - Check code formatting with `prettier`
+   - Automatic code formatting with `prettier`
    - `eslint` coding style validation
      - `jsdoc` and `tsdoc` rules enforcement
+     - `prettier` integration
+5. `husky` git [hooks](https://git-scm.com/docs/githooks)
+   - Use `commitlint` to ensure that git commit messages comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) standards
+   - Validate the code quality of staged sources files upon commit with `lint-staged`
 6. `jest` unit tests
-7. `husky` git [hooks](https://git-scm.com/docs/githooks) - ensure that git commits are of high quality
-8. `commitlint` - ensure that commit subjects comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
-9. `pnpm` package manager
-10. NodeJS Continuos Integration Github workflows
-    - Prettier and lint
+7. `pnpm` package manager
+8. NodeJS Continuos Integration Github workflows
+    - lint
     - Unit Tests
     - Auto Version bump
 
