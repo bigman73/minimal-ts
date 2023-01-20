@@ -1,0 +1,3 @@
+{
+  "*.{ts,tsx}": ["echo 👹 lint staged files 👹", "pnpm exec eslint --max-warnings=0"]
+}

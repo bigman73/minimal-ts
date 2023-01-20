@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run lint
-npm run build
+echo "👹👹  Husky/Pre-Commit: Lint 👹👹"
+pnpm exec lint-staged
