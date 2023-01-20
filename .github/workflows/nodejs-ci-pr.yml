@@ -29,10 +29,7 @@ jobs:
       - name: Install pnpm dependencies
         run: pnpm install
 
-      - name: Check code formatting (prettier)
-        run: pnpm prettier
-
-      - name: Check code quality with linter
+      - name: Check code quality and formatting with linter
         run: pnpm lint
 
       - name: Build the Typescript package
