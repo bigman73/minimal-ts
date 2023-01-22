@@ -18,16 +18,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  // settings: {
-  //   // 'import/parsers': {
-  //   //   '@typescript-eslint/parser': ['.ts', '.tsx']
-  //   // },
-  //   'import/extensions': ['.ts', '.tsx'],
-  //   'import/resolver': {
-  //     typescript: true,
-  //     node: true
-  //   }
-  // },
   rules: {
     'jsdoc/check-access': 1, // Recommended
     'jsdoc/check-alignment': 1, // Recommended
