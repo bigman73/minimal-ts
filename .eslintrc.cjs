@@ -4,14 +4,30 @@ module.exports = {
     es2021: true,
     node: true
   },
-  plugins: ['@typescript-eslint', 'jsdoc', 'eslint-plugin-tsdoc', 'prettier'],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  plugins: ['@typescript-eslint', 'jsdoc', 'eslint-plugin-tsdoc', 'prettier', 'import'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript'
+  ],
   parser: '@typescript-eslint/parser',
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
+  // settings: {
+  //   // 'import/parsers': {
+  //   //   '@typescript-eslint/parser': ['.ts', '.tsx']
+  //   // },
+  //   'import/extensions': ['.ts', '.tsx'],
+  //   'import/resolver': {
+  //     typescript: true,
+  //     node: true
+  //   }
+  // },
   rules: {
     'jsdoc/check-access': 1, // Recommended
     'jsdoc/check-alignment': 1, // Recommended
@@ -90,6 +106,18 @@ module.exports = {
     'jsdoc/valid-types': 1, // Recommended
     'tsdoc/syntax': 'warn',
     // Prettier plugin rules
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    // Import order plugin rules
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc' /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */,
+          caseInsensitive: true /* ignore case. Options: [true, false] */
+        },
+        groups: ['builtin', 'external', 'parent', 'sibling', 'index']
+      }
+    ]
   }
 }
