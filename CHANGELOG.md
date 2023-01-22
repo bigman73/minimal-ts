@@ -6,6 +6,7 @@ Changelog for the `minimal-ts` package.
 - chore: use prettier eslint plugin
 - chore: use import order eslint plugin
 - chore: upgraded dependencies
+- refactor: index file to submodules
 
 ## 1.3.5
 
