@@ -15,6 +15,7 @@ Provides the following functionality:
    - `eslint` coding style validation
      - `jsdoc` and `tsdoc` rules enforcement
      - `prettier` integration
+     - Validation of correct import order with `eslint-plugin-import`
 5. `husky` git [hooks](https://git-scm.com/docs/githooks)
    - Use `commitlint` to ensure that git commit messages comply with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) standards
    - Validate the code quality of staged sources files upon commit with `lint-staged`
